@@ -44,6 +44,9 @@ public class MainActivity extends Activity {
         } else {
             mTextView.setText("NFC is enabled");
         }
+
+        HammingDistance.getHammingDistance("r","r");
+        HammingDistance.getHammingDistance("ra","rb");
     }
 
     private void readTextFromMessage(NdefMessage ndefMessage) {
